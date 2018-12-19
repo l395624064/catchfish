@@ -1,0 +1,16 @@
+*.xml
+*.iml
+*.log
+*.apk
+
+*.iml
+
+.idea/
+xls/
+fodder/
+catchfish_test/client/.idea/
+catchfish_test/client/.laya/
+catchfish_test/client/bin/
+catchfish_test/client/libs/
+catchfish_test/client/release/
+catchfish_test/client/wxminibyscr/
