@@ -9,16 +9,16 @@
 xls/
 fodder/
 
-./client/.idea/
-./client/.laya/
-./client/bin/
-./client/libs/
-./client/release/
-./client/wxminibyscr/
+catchfish_test/client/.idea/
+catchfish_test/client/.laya/
+catchfish_test/client/bin/
+catchfish_test/client/libs/
+catchfish_test/client/release/
+catchfish_test/client/wxminibyscr/
 
-./server/.idea/
-./server/.laya/
-./server/bin/
-./server/libs/
-./server/release/
-./server/wxminibyscr/
+catchfish_test/server/.idea/
+catchfish_test/server/.laya/
+catchfish_test/server/bin/
+catchfish_test/server/libs/
+catchfish_test/server/release/
+catchfish_test/server/wxminibyscr/
