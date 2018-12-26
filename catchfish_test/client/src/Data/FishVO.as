@@ -10,9 +10,11 @@ public class FishVO {
     public var grade:Number;
     public var score:Number;
     public var speed:Number;
-    public var hitValue:Number;
+    public var hitValue:Number;//修正
     public var blood_min:Number;
     public var blood_Max:Number;
+
+    public var aniid:Number;
 
     public function FishVO() {
     }

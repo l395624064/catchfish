@@ -39,10 +39,10 @@ public class XMLManager {
             var node:XmlDom=xmlArr[i];
             bulletVo=new BulletVO();
             bulletVo.type=parseInt(node.getAttribute("type"));
-            bulletVo.speed=parseInt(node.getAttribute("speed"))
-            bulletVo.power=parseInt(node.getAttribute("power"));
-            bulletVo.boomRadius=parseInt(node.getAttribute("boomRadius"));
-            bulletVo.powerRadius=parseInt(node.getAttribute("powerRadius"));
+            bulletVo.speed=parseFloat(node.getAttribute("speed"))
+            bulletVo.power=parseFloat(node.getAttribute("power"));
+            bulletVo.boomRadius=parseFloat(node.getAttribute("boomRadius"));
+            bulletVo.powerRadius=parseFloat(node.getAttribute("powerRadius"));
 
             DataProxy.instance.bulletDic.set(bulletVo.type,bulletVo);
         }
@@ -70,23 +70,25 @@ public class XMLManager {
                     }else if (sunnode.nodeName == "deadUrl") {
                         fishVo.deadUrl = sunnode.firstChild.nodeValue;
                     }else if (sunnode.nodeName == "grade") {
-                        fishVo.grade = parseInt(sunnode.firstChild.nodeValue);
+                        fishVo.grade = parseFloat(sunnode.firstChild.nodeValue);
                     }else if (sunnode.nodeName == "blood_min") {
-                        fishVo.blood_min = parseInt(sunnode.firstChild.nodeValue);
+                        fishVo.blood_min = parseFloat(sunnode.firstChild.nodeValue);
                     }else if (sunnode.nodeName == "blood_Max") {
-                        fishVo.blood_Max = parseInt(sunnode.firstChild.nodeValue);
+                        fishVo.blood_Max = parseFloat(sunnode.firstChild.nodeValue);
                     }else if (sunnode.nodeName == "score") {
-                        fishVo.score = parseInt(sunnode.firstChild.nodeValue);
+                        fishVo.score = parseFloat(sunnode.firstChild.nodeValue);
                     }else if (sunnode.nodeName == "speed") {
-                        fishVo.speed = parseInt(sunnode.firstChild.nodeValue);
+                        fishVo.speed = parseFloat(sunnode.firstChild.nodeValue);
                     }else if (sunnode.nodeName == "hitValue"){
-                        fishVo.hitValue = parseInt(sunnode.firstChild.nodeValue);
+                        fishVo.hitValue = parseFloat(sunnode.firstChild.nodeValue);
+                    }else if (sunnode.nodeName == "aniid"){
+                        fishVo.aniid = parseInt(sunnode.firstChild.nodeValue);
                     }
                 }
                 DataProxy.instance.fishDic.set(fishVo.id,fishVo);
             }
         }
-        //console.log("-fishDic:",DataProxy.instance.fishDic);
+        console.log("-fishDic:",DataProxy.instance.fishDic);
         //console.log("-bulletDic:",DataProxy.instance.bulletDic);
     }
 
